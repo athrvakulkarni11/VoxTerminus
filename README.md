@@ -1,10 +1,16 @@
 ### What is Voxterminus 
 Voxterminus AI Powered Application Which Can Run Any User Commands(Linux ,ROS2 ,etc..) Through Terminal With the Help of GEMINI API
 CAN BE USED FOR ROBOT CONTROLL
-Example Usage:
+
+
+
+
+
+#### Example Usage:
+
 VOICE : RUN ROS2 Turtle Sim Node
 
-VOxterminus TO Terminal : ros2 run turtlesim turtlesim_node
+Voxterminus TO Terminal : ros2 run turtlesim turtlesim_node
 
 
 ### How to RUN ?
