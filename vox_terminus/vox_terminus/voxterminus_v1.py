@@ -15,7 +15,7 @@ class LLMCommandNode(Node):
         self.subscription = self.create_subscription(String, 'voice_commands', self.handle_command, 10)
         
         # Set up Google Generative AI API
-        os.environ['GOOGLE_API_KEY'] = 'AIzaSyCN7WugKz_m_gB85tWgEfTg8EJc84Gx0ho'  # Replace with your actual API key
+        os.environ['GOOGLE_API_KEY'] = 'YOUR_API_KEY'  # Replace with your actual API key
         genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
         
         # Initialize the model
