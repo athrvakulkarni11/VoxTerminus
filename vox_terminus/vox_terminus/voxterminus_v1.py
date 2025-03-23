@@ -3,11 +3,11 @@ from rclpy.node import Node
 from std_msgs.msg import String
 import subprocess
 import os
-import google.generativeai as genai  # Import google.generativeai for generative AI capabilities
+import google.generativeai as genai  
 from gtts import gTTS
 from io import BytesIO
 import pygame
-import re  # Import regular expressions
+import re  
 
 class LLMCommandNode(Node):
     def __init__(self):
@@ -15,7 +15,7 @@ class LLMCommandNode(Node):
         self.subscription = self.create_subscription(String, 'voice_commands', self.handle_command, 10)
         
         # Set up Google Generative AI API
-        os.environ['GOOGLE_API_KEY'] = 'YOUR_API_KEY'  # Replace with your actual API key
+        os.environ['GOOGLE_API_KEY'] = 'YOUR_API_KEY'  
         genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
         
         # Initialize the model
